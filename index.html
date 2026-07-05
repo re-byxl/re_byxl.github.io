@@ -3,166 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>刘景峰 - 个人简历</title>
+    <title>re_byxl - 个人主页</title>
     <style>
         :root {
-            --primary-color: #2b4c7e;
-            --text-color: #2c3e50;
-            --bg-color: #f8f9fa;
-            --border-color: #e9ecef;
+            --primary-color: #1a365d;
+            --text-color: #2d3748;
+            --bg-color: #f7fafc;
+            --border-color: #e2e8f0;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             color: var(--text-color);
             background-color: var(--bg-color);
-            line-height: 1.6;
+            line-height: 1.7;
             margin: 0;
             padding: 40px 20px;
         }
         .resume-container {
-            max-width: 800px;
+            max-width: 750px;
             margin: 0 auto;
             background: #ffffff;
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
-        /* Header Section */
         header {
             border-bottom: 2px solid var(--primary-color);
             padding-bottom: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
         }
         .header-main h1 {
             margin: 0 0 10px 0;
-            font-size: 2.2em;
+            font-size: 2.4em;
             color: var(--primary-color);
+            letter-spacing: 1px;
         }
         .header-main p {
             margin: 0;
-            font-size: 1.2em;
-            color: #6c757d;
+            font-size: 1.15em;
+            color: #4a5568;
         }
         .header-contact {
             text-align: right;
             font-size: 0.95em;
+            color: #4a5568;
         }
-        .header-contact p { margin: 4px 0; }
+        .header-contact p { margin: 6px 0; }
         .header-contact a { color: var(--primary-color); text-decoration: none; }
         .header-contact a:hover { text-decoration: underline; }
 
-        /* Section Layout */
         section {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
         section h2 {
-            font-size: 1.4em;
+            font-size: 1.35em;
             color: var(--primary-color);
             border-left: 4px solid var(--primary-color);
-            padding-left: 10px;
-            margin: 0 0 15px 0;
+            padding-left: 12px;
+            margin: 0 0 20px 0;
         }
         
-        /* Timeline Items */
         .item {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         .item-header {
             display: flex;
             justify-content: space-between;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .item-sub {
-            font-style: italic;
-            color: #6c757d;
-            margin-bottom: 8px;
-        }
-        ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-        li {
+            font-weight: 600;
+            font-size: 1.1em;
             margin-bottom: 6px;
         }
-
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
+        .item-sub {
+            color: #4a5568;
         }
-        .skill-category strong {
-            display: block;
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills-list li {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        .skills-list li:last-child {
+            border-bottom: none;
+        }
+        .skills-list strong {
             color: var(--primary-color);
-            margin-bottom: 5px;
+            display: inline-block;
+            width: 140px;
+        }
+        .skills-list span {
+            color: #4a5568;
         }
     </style>
 </head>
 <body>
 
 <div class="resume-container">
-    <!-- 个人信息头部 -->
     <header>
         <div class="header-main">
             <h1>re_byxl</h1>
-            <p>数据分析 | 公共卫生研究</p>
+            <p>公共卫生研究 | 人群健康数据分析</p>
         </div>
         <div class="header-contact">
-            <p>📧 email@example.com</p>
+            <p>📧 <a href="mailto:liujf0821@outlook.com">liujf0821@outlook.com</a></p>
             <p>🔗 <a href="https://github.com/re_byxl" target="_blank">github.com/re_byxl</a></p>
         </div>
     </header>
 
-    <!-- 教育经历 -->
     <section>
         <h2>教育背景</h2>
         <div class="item">
             <div class="item-header">
-                <span>某某大学（公共卫生学院）</span>
-                <span>2023.09 - 至今</span>
+                <span>北京大学医学部</span>
+                <span>2024.09 - 至今</span>
             </div>
-            <div class="item-sub">硕士研究生 / 本科</div>
+            <div class="item-sub">公共卫生学院 · 预防医学专业 · 本科生</div>
         </div>
     </section>
 
-    <!-- 研究与项目经历 -->
     <section>
-        <h2>项目经历</h2>
+        <h2>研究方向与兴趣</h2>
         <div class="item">
-            <div class="item-header">
-                <span>大型临床/公卫数据库人群队列研究</span>
-                <span>2025.03 - 2026.02</span>
-            </div>
-            <div class="item-sub">独立研究员 / 数据分析师</div>
-            <ul>
-                <li>基于 MIMIC/eICU 等大型临床数据库进行清洗与筛选，构建回顾性队列。</li>
-                <li>使用 Python 完成缺失值插补、异常值处理以及多因素回归分析。</li>
-                <li>负责学术论文的方法学撰写与图表可视化绘制。</li>
-            </ul>
+            <div class="item-sub">专注于公共卫生研究、人群健康数据分析及大型临床/公卫数据库挖掘。</div>
         </div>
     </section>
 
-    <!-- 专业技能 -->
     <section>
         <h2>专业技能</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <strong>数据分析与编程</strong>
-                <span>Python (pandas, numpy), WSL (Ubuntu), Git</span>
-            </div>
-            <div class="skill-category">
-                <strong>学术工具</strong>
-                <span>LaTeX (Overleaf), Obsidian, VS Code</span>
-            </div>
-            <div class="skill-category">
-                <strong>研究领域</strong>
-                <span>流行病学、统计分析、临床数据库挖掘</span>
-            </div>
-        </div>
+        <ul class="skills-list">
+            <li>
+                <strong>数据处理与编程</strong>
+                <span>Python (uv, pandas, numpy, tableone), WSL (Ubuntu), Git</span>
+            </li>
+            <li>
+                <strong>学术与科研工具</strong>
+                <span>LaTeX (Overleaf), VS Code, Obsidian</span>
+            </li>
+            <li>
+                <strong>临床/公卫数据库</strong>
+                <span>熟悉 PhysioNet 平台，具备 MIMIC、eICU 等大型临床数据库的数据处理与分析基础</span>
+            </li>
+        </ul>
     </section>
 </div>
 
